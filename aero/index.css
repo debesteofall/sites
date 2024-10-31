@@ -1,0 +1,42 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+.wrapper {
+    margin: auto;
+    width: 900px;
+    height: 550px;
+    border: 5px solid;
+    position: relative;
+    top: 210px;
+    left: 50px;
+    padding: 10px;
+}
+
+.left {
+    width: 300px;
+    border: 3px solid;
+    padding: 10px;
+    background-color: white;
+
+    position: absolute;
+    left: -140px;
+    bottom: 50px;
+}
+
+#pfp {
+    width: 300px;
+    margin-bottom: -10px;
+}
+
+.flags {
+    margin-top: 5px;
+    height: 25px;
+}
+
+/* mini bio here */
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
