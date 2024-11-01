@@ -35,8 +35,8 @@
 }
 
 /* mini bio here */
-
-.buttons {
+/* make buttons bigger and style them */
+.buttons { 
     display: flex;
     justify-content: space-evenly;
 }
