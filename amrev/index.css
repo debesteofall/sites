@@ -7,27 +7,32 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #F5F7F6;
+    color: #419EDC;
+}
+
+a {
+    color: #1559BD;
 }
 
 .wrapper {
     position: relative;
     margin: 10px;
-    height: 550px;
-    width: 420px;
-    border: solid black;
+    height: 560px;
+    width: 450px;
+    border-radius: 30px;
+    border: solid;
 }
 
 #pfp {
     position: absolute;
-    top: -10px;
-    left: -10px;
+    top: -5px;
     width: 200px;
     transform: rotate(-3deg);
 }
 
 .mini-desc {
     position: absolute;
-    left: 195px;
+    left: 220px;
     text-align: center;
     line-height: 35px;
 }
@@ -61,8 +66,8 @@ body {
 
 #glenplayer02>div {
     position: relative;
-    top: 125px;
-    left: 190px;
+    top: 130px;
+    left: 220px;
     align-self: center;
     -webkit-align-self: center;
 }
@@ -71,14 +76,14 @@ body {
     user-select: none;
     -webkit-user-select: none;
     width: 13px;
-    font-size: 18px;
+    font-size: 17px;
     cursor: pointer;
 }
 
 .playy,
 .pausee {
-    color: #D37912;
-    text-shadow: -1px 0 #76430a, 0 1px #76430a, 1px 0 #76430a, 0 -1px #76430a, 0 0;
+    color: #94D9F0;
+    text-shadow: -1px 0 #1559BD, 0 1px #1559BD, 1px 0 #1559BD, 0 -1px #1559BD, 0 0;
 }
 
 /* color of play & pause buttons */
@@ -90,10 +95,10 @@ body {
 .sonata {
     margin-left: 10px;
     font-family: 'M PLUS Rounded 1c', sans-serif;
-    font-size: 14px;
-    color: #ffd453;
+    font-size: 12px;
+    color: #94D9F0;
     font-weight: bold;
-    text-shadow: -1px 0 #a07c0e, 0 1px #a07c0e, 1px 0 #a07c0e, 0 -1px #a07c0e, 0 0;
+    text-shadow: -1px 0 #1559BD, 0 1px #1559BD, 1px 0 #1559BD, 0 -1px #1559BD, 0 0;
     /* color of music note symbol */
 }
 
@@ -102,10 +107,41 @@ body {
     bottom: 10px;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: 14px;
-    color: #ffd453;
+    color: #94D9F0;
     font-weight: bold;
-    text-shadow: -1px 0 #a07c0e, 0 1px #a07c0e, 1px 0 #a07c0e, 0 -1px #a07c0e, 0 0;
+    text-shadow: -1px 0 #1559BD, 0 1px #1559BD, 1px 0 #1559BD, 0 -1px #1559BD, 0 0;
     /* color of song title */
+}
+
+.banner {
+    width: 400px;
+    height: 7px;
+    border-radius: 5px;
+    right: 25px;
+}
+
+#header {
+    position: absolute;
+    top: 195px;
+}
+
+#standee {
+    position: absolute;
+    top: 175px;
+    left: 260px;
+    width: 185px;
+}
+
+#mini-image {
+    width: 250px;
+    position: absolute;
+    top: 215px;
+    left: 10px;
+}
+
+#footer {
+    position: absolute;
+    top: 520px;
 }
 
 /* @media screen and (max-width: 900px) */
