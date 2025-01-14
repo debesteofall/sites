@@ -1,27 +1,247 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>for our independence</title>
-    <link rel="stylesheet" href="/amrev/index.css">
 </head>
+
+<style>
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #F5F7F6;
+        color: #419EDC;
+    }
+
+    a {
+        color: #1559BD;
+    }
+
+    .wrapper {
+        position: absolute;
+        top: 200px;
+        margin: 10px;
+        height: 560px;
+        width: 450px;
+        border-radius: 30px;
+        border: solid;
+    }
+
+    #pfp {
+        position: absolute;
+        top: -5px;
+        width: 200px;
+        transform: rotate(-3deg);
+        transition: all ease 1s;
+    }
+
+    #pfp {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 1s;
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+    
+  }
+  /* I Know the css is huge but that is so the transition of rotations is smooth and the wobble is also very dramatic*/
+  @keyframes shake {
+    0% {
+      transform: rotate(-3deg);
+    }
+
+    50% {
+        transform: rotate(-3deg);
+    }
+
+    51% {
+        transform: rotate(3deg);
+    }
+
+    100% {
+      transform: rotate(3deg);
+    }
+  }
+
+    .mini-desc {
+        position: absolute;
+        left: 220px;
+        text-align: center;
+        line-height: 35px;
+    }
+
+    .pix {
+        height: 25px;
+        margin: -5px;
+    }
+
+    .flags {
+        height: 20px;
+        width: 25px;
+    }
+
+    /*-------MUSIC PLAYER BY GLENTHEMES-------*/
+    .sonata marquee {
+        text-transform: lowercase;
+        width: 150px;
+        margin-left: 3px;
+    }
+
+    #glenplayer02 {
+        margin-top: 6px;
+        display: flex;
+        z-index: 99;
+    }
+
+    #glenplayer02 a {
+        text-decoration: none;
+    }
+
+    #glenplayer02>div {
+        position: relative;
+        top: 130px;
+        left: 220px;
+        align-self: center;
+        -webkit-align-self: center;
+    }
+
+    .music-controls {
+        user-select: none;
+        -webkit-user-select: none;
+        width: 13px;
+        font-size: 17px;
+        cursor: pointer;
+    }
+
+    .playy,
+    .pausee {
+        color: #94D9F0;
+        text-shadow: -1px 0 #1559BD, 0 1px #1559BD, 1px 0 #1559BD, 0 -1px #1559BD, 0 0;
+    }
+
+    /* color of play & pause buttons */
+
+    .pausee {
+        display: none;
+    }
+
+    .sonata {
+        margin-left: 10px;
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+        font-size: 12px;
+        color: #94D9F0;
+        font-weight: bold;
+        text-shadow: -1px 0 #1559BD, 0 1px #1559BD, 1px 0 #1559BD, 0 -1px #1559BD, 0 0;
+        /* color of music note symbol */
+    }
+
+    .labeltext {
+        position: relative;
+        bottom: 10px;
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+        font-size: 14px;
+        color: #94D9F0;
+        font-weight: bold;
+        text-shadow: -1px 0 #1559BD, 0 1px #1559BD, 1px 0 #1559BD, 0 -1px #1559BD, 0 0;
+        /* color of song title */
+    }
+
+    .banner {
+        width: 400px;
+        height: 7px;
+        border-radius: 5px;
+        right: 25px;
+    }
+
+    #header {
+        position: absolute;
+        top: 195px;
+    }
+
+    #standee {
+        position: absolute;
+        top: 175px;
+        left: 260px;
+        width: 185px;
+    }
+
+    #mini-image {
+        width: 250px;
+        position: absolute;
+        top: 215px;
+        left: 10px;
+    }
+
+    .directory p {
+        width: 200px;
+        position: absolute;
+        top: 325px;
+        left: 180px;
+        text-align: left;
+        line-height: 25px;
+    }
+
+    .directory #statuscafe {
+        margin: 0;
+        position: absolute;
+        top: 365px;
+        left: 30px;
+    }
+
+    #mini-lafayette {
+        position: absolute;
+        top: 375px;
+        left: 240px;
+        height: 150px;
+    }
+
+    #footer {
+        position: absolute;
+        top: 520px;
+    }
+
+    @media screen and (max-width:500px) {
+        body {
+            zoom: 75%;
+        }
+
+        .wrapper {
+            top: 150px;
+        }
+    }
+</style>
 
 <body>
     <div class="wrapper">
         <div class="profile">
-            <img id="pfp" src="https://files.catbox.moe/k40tn7.PNG">
+            <img id="pfp" src="https://files.catbox.moe/k40tn7.PNG" />
         </div>
 
         <div class="mini-desc">
             <p>
-                <b>a</b>ero　　<i>or</i>　　<a href="/"><b>k</b>azoo</a>  𓈒 ◌
-                <br>
-                <img class="pix" src="https://files.catbox.moe/w7alu7.gif" alt="">　　any <a href="https://pronouns.cc/@bede">prns</a>　　
-                <img src="https://i.postimg.cc/8c1zGYZt/pansexual-3-stripes-21-pxx.png" alt="" class="flags"><img src="https://i.postimg.cc/d0rsyFX5/genderfluid-5-stripes-20-px.png" alt="" class="flags">
-                <br>
-                <i>5</i>teen　　<img src="https://files.catbox.moe/a12rm9.gif" class="pix">　　pinoy
+                <b>a</b>ero　　
+                <i>or</i>
+                　　
+                <a href="/">
+                    <b>k</b>azoo
+                </a>
+                  𓈒 ◌
+                <br />
+                <img class="pix" src="https://files.catbox.moe/w7alu7.gif" alt="" />
+                　　any
+                <a href="https://pronouns.cc/@bede">prns</a>
+                　　
+                <img src="https://i.postimg.cc/8c1zGYZt/pansexual-3-stripes-21-pxx.png" alt="" class="flags" />
+                <img src="https://i.postimg.cc/d0rsyFX5/genderfluid-5-stripes-20-px.png" alt="" class="flags" />
+                <br />
+                <i>5</i>teen　　
+                <img src="https://files.catbox.moe/a12rm9.gif" class="pix" />
+                　　pinoy
             </p>
         </div>
 
@@ -34,7 +254,7 @@
                 <div class="pausee">♬</div>
             </div>
             <div class="sonata">
-                <marquee> solo tu - highland </marquee>
+                <marquee>solo tu - highland</marquee>
             </div>
             <div class="labeltext"></div>
         </div>
@@ -42,15 +262,76 @@
         <audio id="tune" src="https://audio.jukehost.co.uk/CYhn0NV86QUiMQJGo9qu3MRkeq8Z03gp"></audio>
         <!--end music player-->
 
-        <img class="banner" id="header" src="https://files.catbox.moe/17qjgb.jpg" alt="">
+        <img class="banner" id="header" src="https://files.catbox.moe/17qjgb.jpg" alt="" />
 
-        <img id="mini-image" src="https://files.catbox.moe/kfvyi1.gif" alt="">
+        <img id="mini-image" src="https://files.catbox.moe/kfvyi1.gif" alt="" />
 
-        <img id="standee" src="https://files.catbox.moe/v1alo2.png" alt="">
+        <img id="standee" src="https://files.catbox.moe/v1alo2.png" alt="" />
 
-        <div class="directory"></div>
+        <div class="directory">
+            <p>
+                <br />
+                <a href="">ext</a>
+                <br />
+                <a href="">kins</a>
+                <br />
+                <a href="">loves</a>
+                <br />
+                <a href="">names</a>
+                <br />
+                <a href="">interests</a>
+            </p>
+            <div id="statuscafe">
+                <!-- start sw-rss-feed code -->
+                <script type="text/javascript">
+                    <!--
+                        rssfeed_url = new Array();
+                    rssfeed_url[0] =
+                        "https://status.cafe/users/debesteofall.atom";
+                    rssfeed_frame_width = "140";
+                    rssfeed_frame_height = "125";
+                    rssfeed_scroll = "off";
+                    rssfeed_scroll_step = "2";
+                    rssfeed_scroll_bar = "on";
+                    rssfeed_target = "_blank";
+                    rssfeed_font_size = "12.5";
+                    rssfeed_font_face = "";
+                    rssfeed_border = "off";
+                    rssfeed_css_url = "";
+                    rssfeed_title = "off";
+                    rssfeed_title_name = "";
+                    rssfeed_title_bgcolor = "#3366ff";
+                    rssfeed_title_color = "#fff";
+                    rssfeed_title_bgimage = "";
+                    rssfeed_footer = "off";
+                    rssfeed_footer_name = "rss feed";
+                    rssfeed_footer_bgcolor = "#fff";
+                    rssfeed_footer_color = "#333";
+                    rssfeed_footer_bgimage = "";
+                    rssfeed_item_title_length = "15";
+                    rssfeed_item_title_color = "#1559BD";
+                    rssfeed_item_bgcolor = "#00FFFFF";
+                    rssfeed_item_bgimage = "";
+                    rssfeed_item_border_bottom = "on";
+                    rssfeed_item_source_icon = "off";
+                    rssfeed_item_date = "off";
+                    rssfeed_item_description = "on";
+                    rssfeed_item_description_length = "120";
+                    rssfeed_item_description_color = "#666";
+                    rssfeed_item_description_link_color = "#c00c0c";
+                    rssfeed_item_description_tag = "off";
+                    rssfeed_no_items = "0";
+                    rssfeed_cache = "ce35ca19bed2189bb03947be67df01";
+                    //-->
+                </script>
+                <script type="text/javascript" src="//feed.surfing-waves.com/js/rss-feed.js"></script>
+                <!-- end sw-rss-feed code -->
+            </div>
+        </div>
 
-        <img class="banner" id="footer" src="https://files.catbox.moe/17qjgb.jpg" alt="">
+        <img src="https://files.catbox.moe/cxag5l.png" alt="" id="mini-lafayette" />
+
+        <img class="banner" id="footer" src="https://files.catbox.moe/17qjgb.jpg" alt="" />
     </div>
 </body>
 
